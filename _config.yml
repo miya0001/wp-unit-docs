@@ -1,0 +1,12 @@
+# Dependencies
+version:     3.1
+markdown:    redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink:   /blog/:title
+
+# Setup
+title:       WP_UnitTestCase Documentation (Unofficial)
+description: 'Unofficial Documentation'
+url:         'http://miya.io'
