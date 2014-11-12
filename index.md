@@ -17,6 +17,7 @@ layout: default
 
 * [WordPress › Automated Testing « Make WordPress Core](http://make.wordpress.org/core/handbook/automated-testing/)
 * [Documentation for PHPUnit – The PHP Testing Framework](http://phpunit.de/documentation.html)
+* [Plugin Unit Tests · wp-cli/wp-cli Wiki](https://github.com/wp-cli/wp-cli/wiki/Plugin-Unit-Tests)
 * [Nikolay Bachiyski: Unit Testing Will Change Your Life](http://wordpress.tv/2011/08/20/nikolay-bachiyski-unit-testing-will-change-your-life/)
 * [Automated Testing in WordPress, Really?!](http://www.slideshare.net/ptahdunbar/automated-testing-in-wordpress-really)
 
