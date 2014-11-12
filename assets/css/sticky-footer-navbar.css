@@ -60,7 +60,7 @@ h2
     margin-top: 40px;
     margin: 1.5em -1em 1em -1em;
     padding: 1.5em 1em 0 1em;
-    border-top: 1px solid #dedede;
+    border-top: 3px solid #dedede;
     font-weight: bolder;
 }
 
@@ -68,4 +68,6 @@ h3
 {
     margin-top: 1.5em;
     margin-bottom: 1em;
+    padding: 0.5em 0;
+    border-bottom: 1px dashed #cccccc;
 }
