@@ -11,14 +11,48 @@ Create a post for the testing.
 ### Description
 
 ```
-int $this->factory->post->create( array $args[, array $generation_definitions] );
+int $this->factory->post->create( array $post[, array $generation_definitions] );
 ```
 
 Create a post for the testing and returns a post ID.
 
 ### Parameters
+
+#### $post
+
+(array) (required) An array representing the elements that make up a post.
+
+| Key | Description | Example value |
+|-----|----|----|
+| post_content | The full text of the post. | Hello World! |
+| post_name | The name (slug) for your post | hello-world |
+| post_title | The title of your post. | Hello World! |
+| post_status | The status of the post. | publish |
+| post_type | The post type. | post |
+| post_author | The user ID number of the author. | 1 |
+| post_excerpt | For all your post excerpt needs. | Hello World! |
+| post_date | The time post was made. | 2014-11-11 23:45:30 |
+
+There are other parameters, see [codex](http://codex.wordpress.org/Function_Reference/wp_insert_post).
+
+#### $generation_definitions
+
+(array) (optional) The Generation definitions of the post.
+
+```
+$this->default_generation_definitions = array(
+	'post_status' => 'publish',
+	'post_title' => new WP_UnitTest_Generator_Sequence( 'Post title %s' ),
+	'post_content' => new WP_UnitTest_Generator_Sequence( 'Post content %s' ),
+	'post_excerpt' => new WP_UnitTest_Generator_Sequence( 'Post excerpt %s' ),
+	'post_type' => 'post'
+);
+```
+
 ### Return Values
-### Errors/Exceptions
+
+(int) The ID of the post.
+
 
 ### Example
 
@@ -28,10 +62,8 @@ Create a post for the testing and returns a post ID.
 class SampleTest extends WP_UnitTestCase {
 
 	function testSample() {
-		$post_id = $this->factory->post->create_and_get(array('post_title' => 'Hello!'));
-		//$post = $this->factory->post->get($post_id);
-		var_dump($post_id);
-		$this->assertTrue($post_id === 3);
+		$post_id = $this->factory->post->create( array( 'post_title' => 'Hello!' ) );
+		$this->assertEquals( 'Hello!', get_the_title( $post_id ) );
 	}
 }
 

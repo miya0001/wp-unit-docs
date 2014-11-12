@@ -13,16 +13,17 @@ layout: default
 * [PHPUnit Manual](https://phpunit.de/)
 * [PHPUnit on GitHub](https://github.com/sebastianbergmann/phpunit)
 
-## Tools
-
-* [WP-CLI](http://wp-cli.org/)
-* [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV)
-* [VagrantPress](http://vagrantpress.org/)
-* [VCCW](http://vccw.cc/)
-
 ## Resources
 
 * [WordPress › Automated Testing « Make WordPress Core](http://make.wordpress.org/core/handbook/automated-testing/)
 * [Documentation for PHPUnit – The PHP Testing Framework](http://phpunit.de/documentation.html)
 * [Nikolay Bachiyski: Unit Testing Will Change Your Life](http://wordpress.tv/2011/08/20/nikolay-bachiyski-unit-testing-will-change-your-life/)
 * [Automated Testing in WordPress, Really?!](http://www.slideshare.net/ptahdunbar/automated-testing-in-wordpress-really)
+
+## Tools
+
+* [WP-CLI](http://wp-cli.org/)
+* [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV)
+* [VagrantPress](http://vagrantpress.org/)
+* [VCCW](http://vccw.cc/)
+* [wp_mock](https://github.com/10up/wp_mock)
