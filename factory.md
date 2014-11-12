@@ -6,7 +6,7 @@ layout: default
 
 ## $this->factory->post->create();
 
-Create a post for the testing.
+Returns a post ID after creating a post for the testing.
 
 ### Description
 
@@ -14,7 +14,7 @@ Create a post for the testing.
 int $this->factory->post->create( array $post[, array $generation_definitions] );
 ```
 
-Create a post for the testing and returns a post ID.
+Returns a post ID after creating a post for the testing.
 
 ### Parameters
 
