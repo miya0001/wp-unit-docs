@@ -100,6 +100,48 @@ $this->factory->attachment->create_and_get();
 ## $this->factory->comment->create_and_get();
 ## $this->factory->comment->create_many();
 ## $this->factory->user->create();
+Returns a user ID after creating a new user for the testing.
+
+### Description
+
+```
+int $this->factory->user->create( array $userdata[, array $generation_definitions] );
+```
+
+### Parameters
+
+#### $userdata
+(mixed) (required) An array of user data, stdClass or WP_User object.
+Default: None
+
+|Field Name|Description| Example value |
+|:--|:--|:--|
+|user_login|A string that contains the user's username for logging in.|user1|
+|user_nicename|A string that contains a URL-friendly name for the user. The default is the user's username.|userone|
+|user_url|A string containing the user's URL for the user's web site.|http://example.com|
+|user_email|A string containing the user's email address.|pre_user_email|
+|display_name|A string that will be shown on the site. Defaults to user's username. It is likely that you will want to change this, for both appearance and security through obscurity (that is if you dont use and delete the default admin user).|John Doe|
+|first_name|The user's first name.|John|
+|last_name|The user's last name.|Doe|
+
+There are other parameters, see [codex](https://codex.wordpress.org/Function_Reference/wp_insert_user).
+
+#### $generation_definitions
+
+(array) (optional) The Generation definitions of the user.
+
+```
+$this->default_generation_definitions = array(
+	'user_login' => new WP_UnitTest_Generator_Sequence( 'User %s' ),
+	'user_pass' => 'password',
+	'user_email' => new WP_UnitTest_Generator_Sequence( 'user_%s@example.org' ),
+	);
+```
+
+### Source
+
+[http://develop.svn.wordpress.org/trunk/tests/phpunit/includes/factory/class-wp-unittest-factory-for-user.php](http://develop.svn.wordpress.org/trunk/tests/phpunit/includes/factory/class-wp-unittest-factory-for-user.php)
+
 ## $this->factory->user->create_and_get();
 ## $this->factory->user->create_many();
 ## $this->factory->term->create();
