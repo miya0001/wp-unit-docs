@@ -119,12 +119,12 @@ Default: None
 |user_login|A string that contains the user's username for logging in.|user1|
 |user_nicename|A string that contains a URL-friendly name for the user. The default is the user's username.|userone|
 |user_url|A string containing the user's URL for the user's web site.|http://example.com|
-|user_email|A string containing the user's email address.|pre_user_email|
+|user_email|A string containing the user's email address.|hoge@example.com|
 |display_name|A string that will be shown on the site. Defaults to user's username. It is likely that you will want to change this, for both appearance and security through obscurity (that is if you dont use and delete the default admin user).|John Doe|
 |first_name|The user's first name.|John|
 |last_name|The user's last name.|Doe|
 
-There are other parameters, see [codex](https://codex.wordpress.org/Function_Reference/wp_insert_user).
+There are other parameters, see [codex](https://codex.wordpress.org/Function_Reference/wp_insert_user#Parameters).
 
 #### $generation_definitions
 
